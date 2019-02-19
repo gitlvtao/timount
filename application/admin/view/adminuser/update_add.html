@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>layuiAdmin 内容系统 - 文章列表</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    {load href="/static/layuiadmin/layui/css/layui.css,/static/layuiadmin/style/admin.css" /}
+</head>
+<body>
+
+<div class="layui-fluid">
+    <div class="layui-card">
+        <div class="layui-card-body">
+            <form class="layui-form" action="" lay-filter="layui-business-form">
+                <div class="layui-form-item">
+                    <label class="layui-form-label"><span class="required">*</span>用户昵称</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="nickname" lay-verify="required" autocomplete="off" lay-vertype="tips" placeholder="请输入用户名称" class="layui-input" value="{notempty name="$info.user_nickname"}{$info.user_nickname}{/notempty}">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label"><span class="required">*</span>登录账号</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="username" lay-verify="required" autocomplete="off" lay-vertype="tips" placeholder="请输入登录账号" class="layui-input" value="{notempty name="$info.user_username"}{$info.user_username}{/notempty}">
+                    </div>
+                </div>
+                <!-- 修改时隐藏密码修改 -->
+                {empty name="$info.user_username"}
+                <div class="layui-form-item">
+                    <label class="layui-form-label"><span class="required">*</span>登录密码</label>
+                    <div class="layui-input-block">
+                        <input type="password" id="password" name="password" lay-verify="required|pwd" autocomplete="off" lay-vertype="tips" placeholder="请输入登录密码" class="layui-input" value="">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label"><span class="required">*</span>确认密码</label>
+                    <div class="layui-input-block">
+                        <input type="password" id="rePassword" name="rePassword" lay-verify="required|pwd" autocomplete="off" lay-vertype="tips" placeholder="请再次输入密码" class="layui-input" value="">
+                    </div>
+                </div>
+                {/empty}
+
+                <div class="layui-form-item">
+                    <label class="layui-form-label"><span class="required">*</span>用户角色</label>
+                    <div class="layui-input-block" id="roleIds"></div>
+                </div>
+                <!-- 提交 -->
+                <div class="layui-form-item layui-layout-admin">
+                    <div class="layui-input-block">
+                        <div class="layui-footer" style="left: 0;">
+                            <input type="hidden" name="uid" value="{notempty name="$info.user_id"}{$info.user_id}{/notempty}">
+                            <button class="layui-btn" lay-submit="" lay-filter="layui-business-submit">立即提交</button>
+                            <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+{load href="/static/layuiadmin/layui/layui.js,/static/js/tools.js,/static/js/jquery.min.js" /}
+<script>
+    //var roleJsonData = eval('([{"id":"57bedafe4ce5471c98baa984ae305057","name":"系统测试员"},{"id":"7d27254ba2e044a0971d845bc389b141","name":"财务人员"},{"id":"48819bf24a7c4272961ca7664205b732","name":"超级管理员"}])');
+    /*$.get("{:url('admin/system/getRole')}", function (result) {
+    })*/
+    function escape2Html(str) {
+        var arrEntities={'lt':'<','gt':'>','nbsp':' ','amp':'&','quot':'"'};
+        return str.replace(/&(lt|gt|nbsp|amp|quot);/ig,function(all,t){return arrEntities[t];});
+    }
+    var roleJsonData = eval('('+escape2Html('{$role}')+')');
+
+    var selectRoles = [];
+    if (roleJsonData) {
+        selectRoles = eval('([{notempty name="$info.user_group"}{$info.user_group}{/notempty}])');
+    }
+    layui.config({
+        base: '/static/layuiadmin/' //静态资源所在路径
+    }).extend({
+        index: 'lib/index' //主入口模块
+    }).extend({
+        selectN: 'selectN',
+        selectM: 'selectM',
+    }).use(['index', 'form','selectN','selectM'], function(){
+        var $ = layui.$
+            ,form = layui.form
+            ,selectM = layui.selectM;
+        selectM({
+            elem: '#roleIds',
+            data: roleJsonData,
+            selected: selectRoles,
+            max : 99,
+            verify:'required',
+            tips: '请选择用户角色',
+            delimiter: ',',
+            field: {idName:'role_id',titleName:'role_name'}
+        });
+        // 自定义验证规则
+        form.verify({
+            pwd: function(value){
+                if($("#password").val() != $("#rePassword").val()){
+                    return '两次密码输入不一致';
+                }
+            }
+        });
+        /* 监听提交 */
+        form.on('submit(layui-business-submit)', function(data){
+            layer.load(1);
+            $.post('{:url("admin/adminuser/updateadd")}',data.field,function(result){
+                layer.closeAll('loading');
+                if (result.code == 0) {
+                    var index = parent.layer.getFrameIndex(window.name);
+                    parent.layer.close(index);
+                    parent.tableIns.reload();
+                    parent.layer.msg("操作成功",{icon: 1});
+                } else {
+                    layer.msg(result.msg,{icon: 2});
+                }
+            },"json");
+            return false;
+        });
+    });
+</script>
+
+</body>
+</html>

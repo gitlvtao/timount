@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- 下面是定义标签库 -->
+    <!-- 下面是定义通用的meta头信息 -->
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="0">
+    <!-- 下面是定义通用的变量信息 -->
+    {load href="/static/layuiadmin/layui/css/layui.css,/static/layuiadmin/style/admin.css,/static/plugin/jstree/themes/default/style.min.css,/static/css/font-awesome.min.css" /}
+    <title></title>
+</head>
+<body>
+<div class="layui-fluid">
+    <div class="layui-card">
+        <div class="layui-card-body">
+            <form class="layui-form" action="" lay-filter="layui-business-form">
+                <input type="hidden" name="id" value=""/>
+                <input type="hidden" name="createUserId" value=""/>
+                <input type="hidden" name="createTime" value=""/>
+                <!-- 可切换的tab -->
+                <div class="layui-tab layui-tab-brief">
+                    <ul class="layui-tab-title">
+                        <li class="layui-this">基本信息</li>
+                        <li>菜单权限</li>
+                    </ul>
+                    <div class="layui-tab-content">
+                        <!-- 基本信息 -->
+                        <div class="layui-tab-item layui-show">
+                            <div class="layui-form-item">
+                                <label class="layui-form-label"><span class="required">*</span>角色名称</label>
+                                <div class="layui-input-block">
+                                    <input type="text" name="name" lay-verify="required" autocomplete="off" lay-vertype="tips" placeholder="请输入角色名称" class="layui-input" value="{notempty name="$info.role_name"}{$info.role_name}{/notempty}">
+                                </div>
+                            </div>
+                            <div class="layui-form-item">
+                                <label class="layui-form-label">角色描述</label>
+                                <div class="layui-input-block">
+                                    <textarea name="description" placeholder="请输入角色描述" class="layui-textarea">{notempty name="$info.role_describe"}{$info.role_describe}{/notempty}</textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 菜单权限 -->
+                        <div class="layui-tab-item">
+                            <div id="functionJstree"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 提交 -->
+                <div class="layui-form-item layui-layout-admin">
+                    <div class="layui-input-block">
+                        <div class="layui-footer" style="left: 0;">
+                            <input type="hidden" name="rid" value="{notempty name="$info.role_id"}{$info.role_id}{/notempty}"/>
+                            <button class="layui-btn" lay-submit="" lay-filter="layui-business-submit">立即提交</button>
+                            <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{load href="/static/layuiadmin/layui/layui.js,/static/js/tools.js,/static/js/jquery.min.js,/static/plugin/jstree/jstree.min.js" /}
+<script>
+    layui.config({
+        base: '/static/layuiadmin/' //静态资源所在路径
+    }).extend({
+        index: 'lib/index' //主入口模块
+    }).use(['index', 'form'], function(){
+        var $ = layui.$
+            ,form = layui.form;
+        //jstree插件
+        $("#functionJstree").jstree({
+            'core': {
+                'data': {
+                    'url': function(data) {
+                        return "{:url('admin/adminauth/auth')}?auth={notempty name='$info.role_auth'}{$info.role_auth}{/notempty}";
+                    },
+                    'dataType': "json",
+                    'data': function(node) {
+                        return { 'id' : node.id };
+                    }
+                }
+            },
+            "plugins" : [ "checkbox" ]
+        });
+        /* 监听提交 */
+        form.on('submit(layui-business-submit)', function(data){
+            layer.load(1);
+            // 获取选择的功能菜单信息
+            var checked_fun_ids = $("#functionJstree").jstree("get_checked");
+            $("#functionJstree").find(".jstree-undetermined").each(function (i, element) {
+                checked_fun_ids.push($(element).parent().attr("id").substr(0,32));
+            });
+            data.field.funIds = checked_fun_ids.toString();
+            // 发送请求
+            $.post('{:url("admin/adminrole/updateadd")}',data.field,function(result){
+                layer.closeAll('loading');
+                if (result.code == 0) {
+                    var index = parent.layer.getFrameIndex(window.name);
+                    parent.layer.close(index);
+                    parent.tableIns.reload();
+                    parent.layer.msg("操作成功",{icon: 1});
+                } else {
+                    layer.msg(result.msg,{icon: 2});
+                }
+            },"json");
+            return false;
+        });
+    });
+</script>
+</body>
+</html>

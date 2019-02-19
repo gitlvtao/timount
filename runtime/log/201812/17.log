@@ -1,0 +1,1340 @@
+---------------------------------------------------------------
+[ 2018-12-17T15:42:40+08:00 ] 127.0.0.1 GET www.mall.com:52002/
+[运行时间：0.033095s] [吞吐率：30.22req/s] [内存消耗：1,217.02kb] [文件加载：63]
+[ info ] [ LANG ] D:\Timount\mall\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.mall.com:52002',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2018-12-17T15:42:55+08:00 ] 127.0.0.1 GET www.mall.com:52002/admin/
+[运行时间：0.023602s] [吞吐率：42.37req/s] [内存消耗：1,359.60kb] [文件加载：66]
+[ info ] [ LANG ] D:\Timount\mall\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.mall.com:52002',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2018-12-17T15:42:55+08:00 ] 127.0.0.1 GET www.mall.com:52002/admin/login/index.html
+[运行时间：0.027736s] [吞吐率：36.05req/s] [内存消耗：1,514.27kb] [文件加载：68]
+[ info ] [ LANG ] D:\Timount\mall\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=j5sp161bt70uqnl6ptpdg8a61p',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.mall.com:52002',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] D:\Timount\mall\application\admin\view\login\index.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-12-17T15:42:55+08:00 ] 127.0.0.1 GET www.mall.com:52002/admin/login/vercode.html?r=0.16134266092247795
+[运行时间：0.033189s] [吞吐率：30.13req/s] [内存消耗：1,350.29kb] [文件加载：65]
+[ info ] [ LANG ] D:\Timount\mall\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=j5sp161bt70uqnl6ptpdg8a61p',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.mall.com:52002/admin/login/index.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.mall.com:52002',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'r' => '0.16134266092247795',
+)
+[ error ] [0]致命错误: Class 'think\captcha\Captcha' not found[D:\Timount\mall\application\admin\controller\Login.php:87]
+---------------------------------------------------------------
+[ 2018-12-17T16:24:44+08:00 ] 127.0.0.1 GET www.mall.com:52002/admin/login/index.html
+[运行时间：0.032240s] [吞吐率：31.02req/s] [内存消耗：1,526.00kb] [文件加载：70]
+[ info ] [ LANG ] D:\Timount\mall\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=j5sp161bt70uqnl6ptpdg8a61p',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.mall.com:52002',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] D:\Timount\mall\application\admin\view\login\index.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-12-17T16:24:44+08:00 ] 127.0.0.1 GET www.mall.com:52002/admin/login/vercode.html?r=0.4614543454116826
+[运行时间：0.041064s] [吞吐率：24.35req/s] [内存消耗：1,486.10kb] [文件加载：66]
+[ info ] [ LANG ] D:\Timount\mall\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=j5sp161bt70uqnl6ptpdg8a61p',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.mall.com:52002/admin/login/index.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.mall.com:52002',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'r' => '0.4614543454116826',
+)
+---------------------------------------------------------------
+[ 2018-12-17T16:24:54+08:00 ] 127.0.0.1 POST www.mall.com:52002/admin/login/index.html
+[运行时间：0.062424s] [吞吐率：16.02req/s] [内存消耗：2,202.29kb] [文件加载：73]
+[ info ] [ LANG ] D:\Timount\mall\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=j5sp161bt70uqnl6ptpdg8a61p',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.mall.com:52002/admin/login/index.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.mall.com:52002',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '43',
+  'connection' => 'keep-alive',
+  'host' => 'www.mall.com:52002',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => '123456',
+  'vercode' => 'fjzc',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014229s ] mysql:host=127.0.0.1;dbname=mall;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mall_admin_user` [ RunTime:0.006805s ]
+[ sql ] [ SQL ] SELECT `user_id`,`user_username`,`user_password`,`user_nickname`,`user_group`,`user_status` FROM `mall_admin_user` WHERE  `user_username` = 'admin'  AND `user_status` IN (0,1) LIMIT 1 [ RunTime:0.000660s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010623s ] mysql:host=127.0.0.1;dbname=mall;charset=utf8
+[ sql ] [ SQL ] UPDATE `mall_admin_user`  SET `user_login_ip` = '127.0.0.1' , `user_login_time` = 1545035094  WHERE  `user_id` = 1 [ RunTime:0.000759s ]
+---------------------------------------------------------------
+[ 2018-12-17T16:24:54+08:00 ] 127.0.0.1 GET www.mall.com:52002/admin/index/index.html
+[运行时间：0.053818s] [吞吐率：18.58req/s] [内存消耗：2,350.75kb] [文件加载：78]
+[ info ] [ LANG ] D:\Timount\mall\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=j5sp161bt70uqnl6ptpdg8a61p',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.mall.com:52002/admin/login/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.mall.com:52002',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\Timount\mall\application\admin\view\index\index.html [ array (
+  0 => 'menu',
+  1 => 'user',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010257s ] mysql:host=127.0.0.1;dbname=mall;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mall_admin_auth` [ RunTime:0.006258s ]
+[ sql ] [ SQL ] SELECT * FROM `mall_admin_auth` ORDER BY `auth_sort` [ RunTime:0.000633s ]
+---------------------------------------------------------------
+[ 2018-12-17T16:24:54+08:00 ] 127.0.0.1 GET www.mall.com:52002/admin/index/console.html
+[运行时间：0.031143s] [吞吐率：32.11req/s] [内存消耗：1,471.42kb] [文件加载：67]
+[ info ] [ LANG ] D:\Timount\mall\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=j5sp161bt70uqnl6ptpdg8a61p',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.mall.com:52002/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.mall.com:52002',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2018-12-17T16:24:56+08:00 ] 127.0.0.1 GET www.mall.com:52002/admin/adminuser/index.html
+[运行时间：0.030241s] [吞吐率：33.07req/s] [内存消耗：1,692.66kb] [文件加载：73]
+[ info ] [ LANG ] D:\Timount\mall\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=j5sp161bt70uqnl6ptpdg8a61p',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.mall.com:52002/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.mall.com:52002',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] D:\Timount\mall\application\admin\view\adminuser\index.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-12-17T16:24:56+08:00 ] 127.0.0.1 POST www.mall.com:52002/admin/adminuser/index.html
+[运行时间：0.062030s] [吞吐率：16.12req/s] [内存消耗：2,525.26kb] [文件加载：81]
+[ info ] [ LANG ] D:\Timount\mall\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=j5sp161bt70uqnl6ptpdg8a61p',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.mall.com:52002/admin/adminuser/index.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.mall.com:52002',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '15',
+  'connection' => 'keep-alive',
+  'host' => 'www.mall.com:52002',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '20',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001141s ] mysql:host=127.0.0.1;dbname=mall;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mall_admin_user` [ RunTime:0.006484s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `mall_admin_user` WHERE  `user_status` >= 0 LIMIT 1 [ RunTime:0.002787s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002425s ] mysql:host=127.0.0.1;dbname=mall;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `mall_admin_user` WHERE  `user_status` >= 0 ORDER BY `user_id` DESC LIMIT 0,20 [ RunTime:0.000559s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mall_admin_role` [ RunTime:0.006985s ]
+[ sql ] [ SQL ] SELECT `role_id`,`role_name` FROM `mall_admin_role` [ RunTime:0.003450s ]
+---------------------------------------------------------------
+[ 2018-12-17T16:24:58+08:00 ] 127.0.0.1 GET www.mall.com:52002/admin/adminrole/index.html
+[运行时间：0.028790s] [吞吐率：34.73req/s] [内存消耗：1,662.13kb] [文件加载：73]
+[ info ] [ LANG ] D:\Timount\mall\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=j5sp161bt70uqnl6ptpdg8a61p',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.mall.com:52002/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.mall.com:52002',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] D:\Timount\mall\application\admin\view\adminrole\index.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-12-17T16:24:58+08:00 ] 127.0.0.1 POST www.mall.com:52002/admin/adminrole/index.html
+[运行时间：0.053396s] [吞吐率：18.73req/s] [内存消耗：2,191.63kb] [文件加载：72]
+[ info ] [ LANG ] D:\Timount\mall\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=j5sp161bt70uqnl6ptpdg8a61p',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.mall.com:52002/admin/adminrole/index.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.mall.com:52002',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '15',
+  'connection' => 'keep-alive',
+  'host' => 'www.mall.com:52002',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '20',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001305s ] mysql:host=127.0.0.1;dbname=mall;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mall_admin_role` [ RunTime:0.007584s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `mall_admin_role` LIMIT 1 [ RunTime:0.000476s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011663s ] mysql:host=127.0.0.1;dbname=mall;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `mall_admin_role` ORDER BY `role_id` DESC LIMIT 0,20 [ RunTime:0.000488s ]
+---------------------------------------------------------------
+[ 2018-12-17T16:25:00+08:00 ] 127.0.0.1 GET www.mall.com:52002/admin/adminauth/index.html
+[运行时间：0.032484s] [吞吐率：30.78req/s] [内存消耗：1,683.72kb] [文件加载：73]
+[ info ] [ LANG ] D:\Timount\mall\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=j5sp161bt70uqnl6ptpdg8a61p',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.mall.com:52002/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.mall.com:52002',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] D:\Timount\mall\application\admin\view\adminauth\index.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-12-17T16:25:00+08:00 ] 127.0.0.1 GET www.mall.com:52002/admin/adminauth/index.html
+[运行时间：0.050811s] [吞吐率：19.68req/s] [内存消耗：2,203.98kb] [文件加载：72]
+[ info ] [ LANG ] D:\Timount\mall\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=j5sp161bt70uqnl6ptpdg8a61p',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.mall.com:52002/admin/adminauth/index.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'www.mall.com:52002',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001014s ] mysql:host=127.0.0.1;dbname=mall;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mall_admin_auth` [ RunTime:0.005813s ]
+[ sql ] [ SQL ] SELECT * FROM `mall_admin_auth` ORDER BY `auth_sort` [ RunTime:0.000485s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011168s ] mysql:host=127.0.0.1;dbname=mall;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `mall_admin_auth` LIMIT 1 [ RunTime:0.000439s ]
+---------------------------------------------------------------
+[ 2018-12-17T16:26:43+08:00 ] 127.0.0.1 GET www.mall.com:52002/admin/login/logout.html
+[运行时间：0.023588s] [吞吐率：42.39req/s] [内存消耗：1,492.09kb] [文件加载：68]
+[ info ] [ LANG ] D:\Timount\mall\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=j5sp161bt70uqnl6ptpdg8a61p',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.mall.com:52002/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.mall.com:52002',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2018-12-17T16:26:43+08:00 ] 127.0.0.1 GET www.mall.com:52002/admin/login/index.html
+[运行时间：0.022773s] [吞吐率：43.91req/s] [内存消耗：1,526.38kb] [文件加载：70]
+[ info ] [ LANG ] D:\Timount\mall\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=j5sp161bt70uqnl6ptpdg8a61p',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.mall.com:52002/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.mall.com:52002',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] D:\Timount\mall\application\admin\view\login\index.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-12-17T16:26:43+08:00 ] 127.0.0.1 GET www.mall.com:52002/admin/login/vercode.html?r=0.9837717449496362
+[运行时间：0.033882s] [吞吐率：29.51req/s] [内存消耗：1,486.23kb] [文件加载：66]
+[ info ] [ LANG ] D:\Timount\mall\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=j5sp161bt70uqnl6ptpdg8a61p',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.mall.com:52002/admin/login/index.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.mall.com:52002',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'r' => '0.9837717449496362',
+)
+---------------------------------------------------------------
+[ 2018-12-17T16:26:50+08:00 ] 127.0.0.1 GET www.mall.com:52002/
+[运行时间：0.035988s] [吞吐率：27.79req/s] [内存消耗：1,525.91kb] [文件加载：70]
+[ info ] [ LANG ] D:\Timount\mall\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=j5sp161bt70uqnl6ptpdg8a61p',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.mall.com:52002',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] D:\Timount\mall\application\admin\view\login\index.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-12-17T16:26:50+08:00 ] 127.0.0.1 GET www.mall.com:52002/admin/login/vercode.html?r=0.0027833714255129927
+[运行时间：0.025109s] [吞吐率：39.83req/s] [内存消耗：1,486.32kb] [文件加载：66]
+[ info ] [ LANG ] D:\Timount\mall\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=j5sp161bt70uqnl6ptpdg8a61p',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.mall.com:52002/',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.mall.com:52002',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'r' => '0.0027833714255129927',
+)
+---------------------------------------------------------------
+[ 2018-12-17T16:27:03+08:00 ] 127.0.0.1 POST www.mall.com:52002/admin/login/index.html
+[运行时间：0.042323s] [吞吐率：23.63req/s] [内存消耗：2,202.34kb] [文件加载：73]
+[ info ] [ LANG ] D:\Timount\mall\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=j5sp161bt70uqnl6ptpdg8a61p; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.mall.com:52002/',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.mall.com:52002',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '43',
+  'connection' => 'keep-alive',
+  'host' => 'www.mall.com:52002',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => '123456',
+  'vercode' => 't2zp',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001227s ] mysql:host=127.0.0.1;dbname=mall;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mall_admin_user` [ RunTime:0.005876s ]
+[ sql ] [ SQL ] SELECT `user_id`,`user_username`,`user_password`,`user_nickname`,`user_group`,`user_status` FROM `mall_admin_user` WHERE  `user_username` = 'admin'  AND `user_status` IN (0,1) LIMIT 1 [ RunTime:0.000573s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002091s ] mysql:host=127.0.0.1;dbname=mall;charset=utf8
+[ sql ] [ SQL ] UPDATE `mall_admin_user`  SET `user_login_ip` = '127.0.0.1' , `user_login_time` = 1545035223  WHERE  `user_id` = 1 [ RunTime:0.000505s ]
+---------------------------------------------------------------
+[ 2018-12-17T16:27:03+08:00 ] 127.0.0.1 GET www.mall.com:52002/admin/index/index.html
+[运行时间：0.052865s] [吞吐率：18.92req/s] [内存消耗：2,221.18kb] [文件加载：76]
+[ info ] [ LANG ] D:\Timount\mall\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=j5sp161bt70uqnl6ptpdg8a61p; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.mall.com:52002/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.mall.com:52002',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\Timount\mall\application\admin\view\index\index.html [ array (
+  0 => 'menu',
+  1 => 'user',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011349s ] mysql:host=127.0.0.1;dbname=mall;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mall_admin_auth` [ RunTime:0.006208s ]
+[ sql ] [ SQL ] SELECT * FROM `mall_admin_auth` ORDER BY `auth_sort` [ RunTime:0.001429s ]
+---------------------------------------------------------------
+[ 2018-12-17T16:27:03+08:00 ] 127.0.0.1 GET www.mall.com:52002/admin/index/console.html
+[运行时间：0.027664s] [吞吐率：36.15req/s] [内存消耗：1,471.52kb] [文件加载：67]
+[ info ] [ LANG ] D:\Timount\mall\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=j5sp161bt70uqnl6ptpdg8a61p; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.mall.com:52002/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.mall.com:52002',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2018-12-17T16:28:34+08:00 ] 127.0.0.1 GET www.mall.com:52002/admin/adminrole/index.html
+[运行时间：0.029159s] [吞吐率：34.29req/s] [内存消耗：1,537.95kb] [文件加载：71]
+[ info ] [ LANG ] D:\Timount\mall\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=j5sp161bt70uqnl6ptpdg8a61p; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.mall.com:52002/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.mall.com:52002',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] D:\Timount\mall\application\admin\view\adminrole\index.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-12-17T16:28:35+08:00 ] 127.0.0.1 POST www.mall.com:52002/admin/adminrole/index.html
+[运行时间：0.060732s] [吞吐率：16.47req/s] [内存消耗：2,191.91kb] [文件加载：72]
+[ info ] [ LANG ] D:\Timount\mall\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=j5sp161bt70uqnl6ptpdg8a61p; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.mall.com:52002/admin/adminrole/index.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.mall.com:52002',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '15',
+  'connection' => 'keep-alive',
+  'host' => 'www.mall.com:52002',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '20',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011946s ] mysql:host=127.0.0.1;dbname=mall;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mall_admin_role` [ RunTime:0.006353s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `mall_admin_role` LIMIT 1 [ RunTime:0.000439s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010768s ] mysql:host=127.0.0.1;dbname=mall;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `mall_admin_role` ORDER BY `role_id` DESC LIMIT 0,20 [ RunTime:0.000469s ]
+---------------------------------------------------------------
+[ 2018-12-17T16:28:36+08:00 ] 127.0.0.1 GET www.mall.com:52002/admin/adminuser/index.html
+[运行时间：0.028539s] [吞吐率：35.04req/s] [内存消耗：1,560.48kb] [文件加载：71]
+[ info ] [ LANG ] D:\Timount\mall\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=j5sp161bt70uqnl6ptpdg8a61p; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.mall.com:52002/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.mall.com:52002',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] D:\Timount\mall\application\admin\view\adminuser\index.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-12-17T16:28:36+08:00 ] 127.0.0.1 POST www.mall.com:52002/admin/adminuser/index.html
+[运行时间：0.059447s] [吞吐率：16.82req/s] [内存消耗：2,525.54kb] [文件加载：81]
+[ info ] [ LANG ] D:\Timount\mall\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=j5sp161bt70uqnl6ptpdg8a61p; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.mall.com:52002/admin/adminuser/index.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.mall.com:52002',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '15',
+  'connection' => 'keep-alive',
+  'host' => 'www.mall.com:52002',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '20',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011637s ] mysql:host=127.0.0.1;dbname=mall;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mall_admin_user` [ RunTime:0.005920s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `mall_admin_user` WHERE  `user_status` >= 0 LIMIT 1 [ RunTime:0.000458s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000697s ] mysql:host=127.0.0.1;dbname=mall;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `mall_admin_user` WHERE  `user_status` >= 0 ORDER BY `user_id` DESC LIMIT 0,20 [ RunTime:0.000343s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mall_admin_role` [ RunTime:0.006623s ]
+[ sql ] [ SQL ] SELECT `role_id`,`role_name` FROM `mall_admin_role` [ RunTime:0.000519s ]
+---------------------------------------------------------------
+[ 2018-12-17T16:28:38+08:00 ] 127.0.0.1 GET www.mall.com:52002/admin/adminuser/updateadd.html
+[运行时间：0.056414s] [吞吐率：17.73req/s] [内存消耗：2,669.63kb] [文件加载：87]
+[ info ] [ LANG ] D:\Timount\mall\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=j5sp161bt70uqnl6ptpdg8a61p; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.mall.com:52002/admin/adminuser/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.mall.com:52002',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\Timount\mall\application\admin\view\adminuser\update_add.html [ array (
+  0 => 'info',
+  1 => 'role',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011409s ] mysql:host=127.0.0.1;dbname=mall;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mall_admin_role` [ RunTime:0.005885s ]
+[ sql ] [ SQL ] SELECT `role_id`,`role_name` FROM `mall_admin_role` [ RunTime:0.000560s ]
+---------------------------------------------------------------
+[ 2018-12-17T16:28:41+08:00 ] 127.0.0.1 GET www.mall.com:52002/admin/adminauth/index.html
+[运行时间：0.023534s] [吞吐率：42.49req/s] [内存消耗：1,551.54kb] [文件加载：71]
+[ info ] [ LANG ] D:\Timount\mall\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=j5sp161bt70uqnl6ptpdg8a61p; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.mall.com:52002/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.mall.com:52002',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] D:\Timount\mall\application\admin\view\adminauth\index.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-12-17T16:28:41+08:00 ] 127.0.0.1 GET www.mall.com:52002/admin/adminauth/index.html
+[运行时间：0.051289s] [吞吐率：19.50req/s] [内存消耗：2,204.02kb] [文件加载：72]
+[ info ] [ LANG ] D:\Timount\mall\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=j5sp161bt70uqnl6ptpdg8a61p; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.mall.com:52002/admin/adminauth/index.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'www.mall.com:52002',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001466s ] mysql:host=127.0.0.1;dbname=mall;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mall_admin_auth` [ RunTime:0.006129s ]
+[ sql ] [ SQL ] SELECT * FROM `mall_admin_auth` ORDER BY `auth_sort` [ RunTime:0.000624s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010566s ] mysql:host=127.0.0.1;dbname=mall;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `mall_admin_auth` LIMIT 1 [ RunTime:0.000465s ]
+---------------------------------------------------------------
+[ 2018-12-17T16:28:42+08:00 ] 127.0.0.1 GET www.mall.com:52002/admin/adminauth/addupdate.html
+[运行时间：0.054948s] [吞吐率：18.20req/s] [内存消耗：2,669.67kb] [文件加载：87]
+[ info ] [ LANG ] D:\Timount\mall\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=j5sp161bt70uqnl6ptpdg8a61p; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.mall.com:52002/admin/adminauth/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.mall.com:52002',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\Timount\mall\application\admin\view\adminauth\addupdate.html [ array (
+  0 => 'info',
+  1 => 'father',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011905s ] mysql:host=127.0.0.1;dbname=mall;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mall_admin_auth` [ RunTime:0.005872s ]
+[ sql ] [ SQL ] SELECT `auth_id`,`auth_name` FROM `mall_admin_auth` WHERE  `auth_pid` = 0 [ RunTime:0.000536s ]
+---------------------------------------------------------------
+[ 2018-12-17T16:28:51+08:00 ] 127.0.0.1 GET www.mall.com:52002/admin/adminrole/updateadd.html
+[运行时间：0.030451s] [吞吐率：32.84req/s] [内存消耗：1,663.42kb] [文件加载：73]
+[ info ] [ LANG ] D:\Timount\mall\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=j5sp161bt70uqnl6ptpdg8a61p; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.mall.com:52002/admin/adminrole/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.mall.com:52002',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] D:\Timount\mall\application\admin\view\adminrole\update_add.html [ array (
+  0 => 'info',
+) ]
+---------------------------------------------------------------
+[ 2018-12-17T16:28:51+08:00 ] 127.0.0.1 GET www.mall.com:52002/admin/adminauth/auth.html?auth=&id=%23
+[运行时间：0.045494s] [吞吐率：21.98req/s] [内存消耗：2,145.08kb] [文件加载：72]
+[ info ] [ LANG ] D:\Timount\mall\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=j5sp161bt70uqnl6ptpdg8a61p; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.mall.com:52002/admin/adminrole/updateadd.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'www.mall.com:52002',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'auth' => '',
+  'id' => '#',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011135s ] mysql:host=127.0.0.1;dbname=mall;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mall_admin_auth` [ RunTime:0.006088s ]
+[ sql ] [ SQL ] SELECT * FROM `mall_admin_auth` WHERE  `auth_status` = 1 ORDER BY `auth_pid` [ RunTime:0.000507s ]
+---------------------------------------------------------------
+[ 2018-12-17T16:29:02+08:00 ] 127.0.0.1 GET www.mall.com:52002/admin/index/index.html
+[运行时间：0.050581s] [吞吐率：19.77req/s] [内存消耗：2,221.22kb] [文件加载：76]
+[ info ] [ LANG ] D:\Timount\mall\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=j5sp161bt70uqnl6ptpdg8a61p; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.mall.com:52002/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.mall.com:52002',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\Timount\mall\application\admin\view\index\index.html [ array (
+  0 => 'menu',
+  1 => 'user',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011513s ] mysql:host=127.0.0.1;dbname=mall;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mall_admin_auth` [ RunTime:0.005954s ]
+[ sql ] [ SQL ] SELECT * FROM `mall_admin_auth` ORDER BY `auth_sort` [ RunTime:0.000587s ]
+---------------------------------------------------------------
+[ 2018-12-17T16:29:02+08:00 ] 127.0.0.1 GET www.mall.com:52002/admin/index/console.html
+[运行时间：0.026457s] [吞吐率：37.80req/s] [内存消耗：1,471.49kb] [文件加载：67]
+[ info ] [ LANG ] D:\Timount\mall\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=j5sp161bt70uqnl6ptpdg8a61p; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.mall.com:52002/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.mall.com:52002',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2018-12-17T16:38:03+08:00 ] 127.0.0.1 GET www.mall.com:52002/admin/index/console.html
+[运行时间：0.024930s] [吞吐率：40.11req/s] [内存消耗：1,471.55kb] [文件加载：67]
+[ info ] [ LANG ] D:\Timount\mall\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=j5sp161bt70uqnl6ptpdg8a61p; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.mall.com:52002/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.mall.com:52002',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2018-12-17T16:38:05+08:00 ] 127.0.0.1 GET www.mall.com:52002/admin/index/index.html
+[运行时间：0.042164s] [吞吐率：23.72req/s] [内存消耗：2,350.85kb] [文件加载：78]
+[ info ] [ LANG ] D:\Timount\mall\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=j5sp161bt70uqnl6ptpdg8a61p; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.mall.com:52002/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.mall.com:52002',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\Timount\mall\application\admin\view\index\index.html [ array (
+  0 => 'menu',
+  1 => 'user',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002810s ] mysql:host=127.0.0.1;dbname=mall;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mall_admin_auth` [ RunTime:0.007217s ]
+[ sql ] [ SQL ] SELECT * FROM `mall_admin_auth` ORDER BY `auth_sort` [ RunTime:0.000551s ]
+---------------------------------------------------------------
+[ 2018-12-17T16:38:05+08:00 ] 127.0.0.1 GET www.mall.com:52002/admin/index/console.html
+[运行时间：0.028239s] [吞吐率：35.41req/s] [内存消耗：1,471.49kb] [文件加载：67]
+[ info ] [ LANG ] D:\Timount\mall\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=j5sp161bt70uqnl6ptpdg8a61p; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.mall.com:52002/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.mall.com:52002',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2018-12-17T16:38:38+08:00 ] 127.0.0.1 GET www.mall.com:52002/admin/adminrole/index.html
+[运行时间：0.025976s] [吞吐率：38.50req/s] [内存消耗：1,537.95kb] [文件加载：71]
+[ info ] [ LANG ] D:\Timount\mall\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=j5sp161bt70uqnl6ptpdg8a61p; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.mall.com:52002/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.mall.com:52002',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] D:\Timount\mall\application\admin\view\adminrole\index.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-12-17T16:38:38+08:00 ] 127.0.0.1 POST www.mall.com:52002/admin/adminrole/index.html
+[运行时间：0.041569s] [吞吐率：24.06req/s] [内存消耗：2,191.91kb] [文件加载：72]
+[ info ] [ LANG ] D:\Timount\mall\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=j5sp161bt70uqnl6ptpdg8a61p; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.mall.com:52002/admin/adminrole/index.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.mall.com:52002',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '15',
+  'connection' => 'keep-alive',
+  'host' => 'www.mall.com:52002',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '20',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001249s ] mysql:host=127.0.0.1;dbname=mall;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mall_admin_role` [ RunTime:0.005887s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `mall_admin_role` LIMIT 1 [ RunTime:0.000565s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000809s ] mysql:host=127.0.0.1;dbname=mall;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `mall_admin_role` ORDER BY `role_id` DESC LIMIT 0,20 [ RunTime:0.000362s ]
+---------------------------------------------------------------
+[ 2018-12-17T16:38:39+08:00 ] 127.0.0.1 GET www.mall.com:52002/admin/adminuser/index.html
+[运行时间：0.023573s] [吞吐率：42.42req/s] [内存消耗：1,560.48kb] [文件加载：71]
+[ info ] [ LANG ] D:\Timount\mall\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=j5sp161bt70uqnl6ptpdg8a61p; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.mall.com:52002/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.mall.com:52002',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] D:\Timount\mall\application\admin\view\adminuser\index.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-12-17T16:38:39+08:00 ] 127.0.0.1 POST www.mall.com:52002/admin/adminuser/index.html
+[运行时间：0.059139s] [吞吐率：16.91req/s] [内存消耗：2,525.54kb] [文件加载：81]
+[ info ] [ LANG ] D:\Timount\mall\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=j5sp161bt70uqnl6ptpdg8a61p; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.mall.com:52002/admin/adminuser/index.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.mall.com:52002',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '15',
+  'connection' => 'keep-alive',
+  'host' => 'www.mall.com:52002',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '20',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010338s ] mysql:host=127.0.0.1;dbname=mall;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mall_admin_user` [ RunTime:0.006057s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `mall_admin_user` WHERE  `user_status` >= 0 LIMIT 1 [ RunTime:0.000547s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000793s ] mysql:host=127.0.0.1;dbname=mall;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `mall_admin_user` WHERE  `user_status` >= 0 ORDER BY `user_id` DESC LIMIT 0,20 [ RunTime:0.002622s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mall_admin_role` [ RunTime:0.006388s ]
+[ sql ] [ SQL ] SELECT `role_id`,`role_name` FROM `mall_admin_role` [ RunTime:0.000517s ]
+---------------------------------------------------------------
+[ 2018-12-17T16:38:39+08:00 ] 127.0.0.1 GET www.mall.com:52002/admin/adminauth/index.html
+[运行时间：0.029307s] [吞吐率：34.12req/s] [内存消耗：1,551.54kb] [文件加载：71]
+[ info ] [ LANG ] D:\Timount\mall\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=j5sp161bt70uqnl6ptpdg8a61p; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.mall.com:52002/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.mall.com:52002',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] D:\Timount\mall\application\admin\view\adminauth\index.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-12-17T16:38:39+08:00 ] 127.0.0.1 GET www.mall.com:52002/admin/adminauth/index.html
+[运行时间：0.040113s] [吞吐率：24.93req/s] [内存消耗：2,204.02kb] [文件加载：72]
+[ info ] [ LANG ] D:\Timount\mall\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=j5sp161bt70uqnl6ptpdg8a61p; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.mall.com:52002/admin/adminauth/index.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'www.mall.com:52002',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002949s ] mysql:host=127.0.0.1;dbname=mall;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mall_admin_auth` [ RunTime:0.005712s ]
+[ sql ] [ SQL ] SELECT * FROM `mall_admin_auth` ORDER BY `auth_sort` [ RunTime:0.000569s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000888s ] mysql:host=127.0.0.1;dbname=mall;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `mall_admin_auth` LIMIT 1 [ RunTime:0.000374s ]
+---------------------------------------------------------------
+[ 2018-12-17T16:38:47+08:00 ] 127.0.0.1 GET www.mall.com:52002/admin/adminrole/index.html
+[运行时间：0.021863s] [吞吐率：45.74req/s] [内存消耗：1,537.95kb] [文件加载：71]
+[ info ] [ LANG ] D:\Timount\mall\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=j5sp161bt70uqnl6ptpdg8a61p; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.mall.com:52002/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.mall.com:52002',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] D:\Timount\mall\application\admin\view\adminrole\index.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-12-17T16:38:47+08:00 ] 127.0.0.1 POST www.mall.com:52002/admin/adminrole/index.html
+[运行时间：0.064125s] [吞吐率：15.59req/s] [内存消耗：2,191.91kb] [文件加载：72]
+[ info ] [ LANG ] D:\Timount\mall\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=j5sp161bt70uqnl6ptpdg8a61p; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.mall.com:52002/admin/adminrole/index.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.mall.com:52002',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '15',
+  'connection' => 'keep-alive',
+  'host' => 'www.mall.com:52002',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '20',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012239s ] mysql:host=127.0.0.1;dbname=mall;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mall_admin_role` [ RunTime:0.007286s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `mall_admin_role` LIMIT 1 [ RunTime:0.000532s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011637s ] mysql:host=127.0.0.1;dbname=mall;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `mall_admin_role` ORDER BY `role_id` DESC LIMIT 0,20 [ RunTime:0.000513s ]
+---------------------------------------------------------------
+[ 2018-12-17T16:38:47+08:00 ] 127.0.0.1 GET www.mall.com:52002/admin/adminuser/index.html
+[运行时间：0.025459s] [吞吐率：39.28req/s] [内存消耗：1,560.48kb] [文件加载：71]
+[ info ] [ LANG ] D:\Timount\mall\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=j5sp161bt70uqnl6ptpdg8a61p; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.mall.com:52002/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.mall.com:52002',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] D:\Timount\mall\application\admin\view\adminuser\index.html [ array (
+) ]
+---------------------------------------------------------------
+[ 2018-12-17T16:38:47+08:00 ] 127.0.0.1 POST www.mall.com:52002/admin/adminuser/index.html
+[运行时间：0.068296s] [吞吐率：14.64req/s] [内存消耗：2,525.54kb] [文件加载：81]
+[ info ] [ LANG ] D:\Timount\mall\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=j5sp161bt70uqnl6ptpdg8a61p; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.mall.com:52002/admin/adminuser/index.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.mall.com:52002',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '15',
+  'connection' => 'keep-alive',
+  'host' => 'www.mall.com:52002',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '20',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010605s ] mysql:host=127.0.0.1;dbname=mall;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mall_admin_user` [ RunTime:0.010118s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `mall_admin_user` WHERE  `user_status` >= 0 LIMIT 1 [ RunTime:0.000591s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000911s ] mysql:host=127.0.0.1;dbname=mall;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `mall_admin_user` WHERE  `user_status` >= 0 ORDER BY `user_id` DESC LIMIT 0,20 [ RunTime:0.000489s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mall_admin_role` [ RunTime:0.009642s ]
+[ sql ] [ SQL ] SELECT `role_id`,`role_name` FROM `mall_admin_role` [ RunTime:0.000730s ]
+---------------------------------------------------------------
+[ 2018-12-17T17:02:00+08:00 ] 127.0.0.1 GET www.mall.com:52002/cs
+[运行时间：0.030006s] [吞吐率：33.33req/s] [内存消耗：1,158.85kb] [文件加载：59]
+[ info ] [ LANG ] D:\Timount\mall\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[ 2018-12-17T17:02:10+08:00 ] 127.0.0.1 GET www.mall.com:52002/index/index/cs
+[运行时间：0.022398s] [吞吐率：44.65req/s] [内存消耗：1,422.38kb] [文件加载：67]
+[ info ] [ LANG ] D:\Timount\mall\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=j5sp161bt70uqnl6ptpdg8a61p; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.mall.com:52002',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2018-12-17T17:02:33+08:00 ] 127.0.0.1 GET www.mall.com:52002/index/index/cs
+[运行时间：0.029073s] [吞吐率：34.40req/s] [内存消耗：1,449.94kb] [文件加载：67]
+[ info ] [ LANG ] D:\Timount\mall\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=j5sp161bt70uqnl6ptpdg8a61p; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.mall.com:52002',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ error ] [0]致命错误: Class 'MongoDB' not found[D:\Timount\mall\application\index\controller\Index.php:49]
+---------------------------------------------------------------
+[ 2018-12-17T17:04:28+08:00 ] 127.0.0.1 GET www.mall.com:52002/index/index/cs
+[运行时间：0.045841s] [吞吐率：21.81req/s] [内存消耗：1,450.02kb] [文件加载：67]
+[ info ] [ LANG ] D:\Timount\mall\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=j5sp161bt70uqnl6ptpdg8a61p; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.mall.com:52002',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ error ] [0]致命错误: Class 'MongoClient' not found[D:\Timount\mall\application\index\controller\Index.php:49]
+---------------------------------------------------------------
+[ 2018-12-17T17:06:22+08:00 ] 127.0.0.1 GET www.mall.com:52002/index/index/cs
+[运行时间：0.048008s] [吞吐率：20.83req/s] [内存消耗：2,094.91kb] [文件加载：74]
+[ info ] [ LANG ] D:\Timount\mall\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=j5sp161bt70uqnl6ptpdg8a61p; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.mall.com:52002',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001341s ] mysql:host=127.0.0.1;dbname=mall;charset=utf8
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mall.test' doesn't exist[D:\Timount\mall\thinkphp\library\think\db\Connection.php:699]
+---------------------------------------------------------------
+[ 2018-12-17T17:26:58+08:00 ] 127.0.0.1 GET www.mall.com:52002/index/index/cs
+[运行时间：0.058482s] [吞吐率：17.10req/s] [内存消耗：2,080.52kb] [文件加载：66]
+[ info ] [ LANG ] D:\Timount\mall\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=j5sp161bt70uqnl6ptpdg8a61p; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.mall.com:52002',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT \think\mongo\Connection
+[ sql ] [ MongoDb ] CONNECT :[ UseTime:0.005857s ] 
+[ sql ] [ SQL ] db.runoob.find().limit(0); [ RunTime:0.005549s ]

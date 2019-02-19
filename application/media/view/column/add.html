@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- 下面是定义标签库 -->
+    <!-- 下面是定义通用的meta头信息 -->
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="0">
+    <!-- 下面是定义通用的变量信息 -->
+    {load href="/static/layuiadmin/layui/css/layui.css,/static/layuiadmin/style/admin.css" /}
+    <title></title>
+</head>
+<body>
+<div class="layui-fluid">
+    <div class="layui-row layui-col-space15">
+        <div class="layui-card">
+            <div class="layui-btn-table">
+                <form class="layui-form layui-form-pane">
+                    <div class="layui-form-item layui-row">
+                        <label class="layui-form-label" style="width: 200px">栏目名称</label>
+                        <div class="layui-input-4" style="float: left;width: 400px;">
+                            <input autocomplete="off" type="text" name="column_title" value="{notempty name='$column'}{$column.column_title}{/notempty}" lay-verify="required" placeholder="请输入栏目名称" class="layui-input">
+                        </div>
+                    </div>
+
+                    <div class="layui-form-item layui-row">
+                        <label class="layui-form-label" style="width: 200px">栏目类型</label>
+                        <div class="layui-input-4" style="float: left;width: 400px;">
+                            <input lay-filter="type" type="radio" name="column_type" value="1" title="今日秒杀" {notempty name='$column'} {if $column.column_type == 1}checked{/if}{/notempty}>
+                            <input lay-filter="type" type="radio" name="column_type" value="0" title="专场" {notempty name='$column'} {if $column.column_type == 0}checked{/if}{else}checked{/notempty}>
+                        </div>
+                    </div>
+
+                    <div class="layui-form-item layui-row">
+                        <label class="layui-form-label" style="width: 200px">栏目属性</label>
+                        <div class="layui-input-4" style="float: left;width: 400px;">
+                            <input type="radio" name="column_sex" value="1" title="男" {notempty name='$column'} {if $column.column_sex == 1}checked{/if}{/notempty}>
+                            <input type="radio" name="column_sex" value="2" title="女" {notempty name='$column'} {if $column.column_sex == 2}checked{/if}{else}checked{/notempty}>
+                        </div>
+                    </div>
+
+                    <div class="layui-form-item layui-row" id="time">
+                        <label class="layui-form-label" style="width: 200px">时间选择</label>
+                        <div class="layui-input-4" style="float: left;width: 400px;" >
+                            <input class="layui-input" type="text" name="column_time" value="{notempty name='$column'}{$column.column_thumb}{/notempty}" id="timeChoose">
+                        </div>
+                    </div>
+
+                    <!--图片上传①-->
+                    <div class="layui-form-item">
+                        <label class="layui-form-label" style="width: 200px">栏目缩略图(140*140px)</label>
+                        <input type="hidden" name="column_thumb" id="pic_index" value="{notempty name='$column'}{$column.column_thumb}{/notempty}">
+                        <div class="layui-input-block">
+                            <div class="layui-upload">
+                                <button type="button" class="layui-btn layui-btn-primary" id="adBtn_index"><i class="icon icon-upload3"></i>点击上传</button>
+                                <div class="layui-upload-list">
+                                    <img class="layui-upload-img" id="adPic_index" src="{notempty name="$column.column_thumb"}{$column.column_thumb}{/notempty}" onerror="this.src='/static/img/nopicture.gif';this.onerror=null" style="width: 240px; height: 180px">
+                                    <p id="demoText_index"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--图片上传③-->
+                    <div class="layui-form-item">
+                        <label class="layui-form-label" style="width: 200px">栏目底图(710*150px)</label>
+                        <input type="hidden" name="column_pic" id="pic_thumb" value="{notempty name='$column'}{$column.column_pic}{/notempty}">
+                        <div class="layui-input-block">
+                            <div class="layui-upload">
+                                <button type="button" class="layui-btn layui-btn-primary" id="adBtn_thumb"><i class="icon icon-upload3"></i>点击上传</button>
+                                <div class="layui-upload-list">
+                                    <img class="layui-upload-img" id="adPic_thumb" src="{notempty name="$column.column_pic"}{$column.column_pic}{/notempty}" onerror="this.src='/static/img/nopicture.gif';this.onerror=null" style="width: 240px; height: 180px">
+                                    <p id="demoText_thumb"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <!--图片上传②-->
+                    <div class="layui-form-item">
+                        <label class="layui-form-label" style="width: 200px">栏目列表图(710*150px)</label>
+                        <input type="hidden" name="column_image" id="pic_list" value="{notempty name='$column'}{$column.column_image}{/notempty}">
+                        <div class="layui-input-block">
+                            <div class="layui-upload">
+                                <button type="button" class="layui-btn layui-btn-primary" id="adBtn_list"><i class="icon icon-upload3"></i>点击上传</button>
+                                <div class="layui-upload-list">
+                                    <img class="layui-upload-img" id="adPic_list" src="{notempty name="$column.column_image"}{$column.column_image}{/notempty}" onerror="this.src='/static/img/nopicture.gif';this.onerror=null" style="width: 240px; height: 180px">
+                                    <p id="demoText_list"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="layui-form-item layui-layout-admin">
+                        <div class="layui-input-block">
+                            <input type="hidden" name="media_id" value="{notempty name='$media_id'}{$media_id}{/notempty}" class="layui-input">
+                            <input type="hidden" name="column_id" value="{notempty name='$column'}{$column.column_id}{/notempty}" class="layui-input">
+                            <button type="button" class="layui-btn" lay-submit="" lay-filter="submit">提交</button>
+                            <!--<a href="{:url('index')}" class="layui-btn layui-btn-primary">返回</a>-->
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{load href="/static/layuiadmin/layui/layui.js,/static/js/tools.js" /}
+<script>
+    var type = "{$type}";
+    layui.use(['form', 'layer','upload','laydate'], function () {
+        var form = layui.form, $ = layui.jquery, upload = layui.upload,laydate = layui.laydate;
+        form.on('submit(submit)', function (data) {
+            var loading = layer.load(1, {shade: [0.1, '#fff']});
+            var action = "{:url('add')}";
+            if (data.field.column_id.length > 0){
+                action = "{:url('edit')}";
+            }
+            $.post(action, data.field, function (res) {
+                layer.close(loading);
+                if (res.code > 0) {
+                    layer.msg(res.msg, {time: 1800, icon: 1}, function () {
+                        var index = parent.layer.getFrameIndex(window.name);
+                        parent.layer.close(index);
+                        parent.tableIn.reload();
+                    });
+                } else {
+                    layer.msg(res.msg, {time: 1800, icon: 2});
+                }
+            });
+        });
+
+        if (type == 1){
+            $("time").show();
+        } else{
+            $("#time").hide();
+        }
+
+        //监听单选
+        form.on('radio(type)', function(data){
+            // console.log(data.elem); //得到radio原始DOM对象
+            // console.log(data.value); //被点击的radio的value值
+            if (data.value == 1) {
+                $("#time").show();
+            }else{
+                $("#time").hide();
+            }
+        });
+        //时间控件
+        laydate.render({
+            elem: '#timeChoose',
+            type: 'time'
+        });
+
+        /*form.verify({
+            PID:function(value,item){
+                if(!new RegExp("^mm\_[0-9]+\_[0-9]+\_[0-9]+$").test(value)){
+                    return "栏目PID书写格式有误";
+                }
+            },
+            rate:function(value,item){
+                if(!new RegExp("0\.?[0-9]+$").test(value)){
+                    return "请输入正确费率！";
+                }
+            },
+            EN:function(value,item){
+                if (!new RegExp("[a-zA-Z]+$").test(value)){
+                    return "栏目标识书写格式有误";
+                }
+            }
+        });*/
+
+        //缩略图片上传
+        var posterWidth_1 = 140, posterHeight_1 = 140;
+        var uploadIndex = upload.render({
+            elem: '#adBtn_index'
+            ,url: '{:url("other/upload/image")}'
+            ,auto: false
+            ,field: 'image'
+            ,accept: 'images'
+            ,acceptMime: 'image/!*'
+            ,before: function(obj){
+                layer.load(); //上传loading
+                //预读本地文件示例，不支持ie8
+                obj.preview(function(index, file, result){
+                    $('#adPic_index').attr('src', result); //图片链接（base64）
+                });
+            }
+            ,choose: function(obj) {
+                obj.preview(function(index, file, result) {
+                    var img = new Image();
+                    img.onload = function() {
+                        // console.log('choose poster', img.width, img.height);
+                        if (posterWidth_1 == img.width && posterHeight_1 == img.height) {
+                            $('#adPic_index').attr('src', result); //图片链接（base64）不支持ie8
+                            obj.upload(index, file);
+                        } else {
+                            layer.msg('图片尺寸必须为：' + posterWidth_1 + 'x' + posterHeight_1 + 'px');
+                        }
+                    };
+                    img.src = result;
+                });
+            }
+            ,done: function(res){
+                if(res.code>=0){
+                    $('#pic_index').val(res.data);
+                }else{
+                    //如果上传失败
+                    return layer.msg('上传失败');
+                }
+                layer.closeAll('loading'); //关闭loading
+            }
+            ,error: function(){
+                layer.closeAll('loading'); //关闭loading
+                //演示失败状态，并实现重传
+                var demoText = $('#demoText_index');
+                demoText.html('<span style="color: #FF5722;">上传失败</span> <a class="layui-btn layui-btn-mini demo-reload">重试</a>');
+                demoText.find('.demo-reload').on('click', function(){
+                    uploadIndex.upload();
+                });
+            }
+        });
+
+        //详情页图片上传
+        var posterWidth = 710, posterHeight = 150;
+        var uploadList = upload.render({
+            elem: '#adBtn_list'
+            ,url: '{:url("other/upload/image")}'
+            ,auto: false
+            ,field: 'image'
+            ,accept: 'images'
+            ,acceptMime: 'image/!*'
+            ,before: function(obj){
+                layer.load(); //上传loading
+                //预读本地文件示例，不支持ie8
+                obj.preview(function(index, file, result){
+                    $('#adPic_list').attr('src', result); //图片链接（base64）
+                });
+            }
+            ,choose: function(obj) {
+                obj.preview(function(index, file, result) {
+                    var img = new Image();
+                    img.onload = function() {
+                        // console.log('choose poster', img.width, img.height);
+                        if (posterWidth == img.width && posterHeight == img.height) {
+                            $('#adPic_list').attr('src', result); //图片链接（base64）不支持ie8
+                            obj.upload(index, file);
+                        } else {
+                            layer.msg('图片尺寸必须为：' + posterWidth + 'x' + posterHeight + 'px');
+                        }
+                    };
+                    img.src = result;
+                });
+            }
+            ,done: function(res){
+                if(res.code>=0){
+                    $('#pic_list').val(res.data);
+                }else{
+                    //如果上传失败
+                    return layer.msg('上传失败');
+                }
+                layer.closeAll('loading'); //关闭loading
+            }
+            ,error: function(){
+                layer.closeAll('loading'); //关闭loading
+                //演示失败状态，并实现重传
+                var demoText = $('#demoText_list');
+                demoText.html('<span style="color: #FF5722;">上传失败</span> <a class="layui-btn layui-btn-mini demo-reload">重试</a>');
+                demoText.find('.demo-reload').on('click', function(){
+                    uploadList.upload();
+                });
+            }
+        });
+
+        //列表底图片上传
+        var posterWidth_2 = 710, posterHeight_2 = 150;
+        var uploadThumb= upload.render({
+            elem: '#adBtn_thumb'
+            ,url: '{:url("other/upload/image")}'
+            ,auto: false
+            ,field: 'image'
+            ,accept: 'images'
+            ,acceptMime: 'image/!*'
+            ,before: function(obj){
+                layer.load(); //上传loading
+                //预读本地文件示例，不支持ie8
+                obj.preview(function(index, file, result){
+                    $('#adPic_thumb').attr('src', result); //图片链接（base64）
+                });
+            }
+            ,choose: function(obj) {
+                obj.preview(function(index, file, result) {
+                    var img = new Image();
+                    img.onload = function() {
+                        // console.log('choose poster', img.width, img.height);
+                        if (posterWidth_2 == img.width && posterHeight_2 == img.height) {
+                            $('#adPic_thumb').attr('src', result); //图片链接（base64）不支持ie8
+                            obj.upload(index, file);
+                        } else {
+                            layer.msg('图片尺寸必须为：' + posterWidth_2 + 'x' + posterHeight_2 + 'px');
+                        }
+                    };
+                    img.src = result;
+                });
+            }
+            ,done: function(res){
+                if(res.code>=0){
+                    $('#pic_thumb').val(res.data);
+                }else{
+                    //如果上传失败
+                    return layer.msg('上传失败');
+                }
+                layer.closeAll('loading'); //关闭loading
+            }
+            ,error: function(){
+                layer.closeAll('loading'); //关闭loading
+                //演示失败状态，并实现重传
+                var demoText = $('#demoText_thumb');
+                demoText.html('<span style="color: #FF5722;">上传失败</span> <a class="layui-btn layui-btn-mini demo-reload">重试</a>');
+                demoText.find('.demo-reload').on('click', function(){
+                    uploadThumb.upload();
+                });
+            }
+        });
+
+
+    });
+
+</script>

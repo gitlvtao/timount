@@ -1,0 +1,219 @@
+<?php /*a:1:{s:59:"D:\Timount\mall\application\admin\view\adminauth\index.html";i:1539228170;}*/ ?>
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- 下面是定义标签库 -->
+    <!-- 下面是定义通用的meta头信息 -->
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="0">
+    <!-- 下面是定义通用的变量信息 -->
+
+    <link rel="stylesheet" type="text/css" href="/static/layuiadmin/layui/css/layui.css" /><link rel="stylesheet" type="text/css" href="/static/layuiadmin/style/admin.css" />
+    <!--[if lt IE 9]>
+    <script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
+    <script src="https://cdn.staticfile.org/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <title></title>
+</head>
+<body>
+<div class="layui-fluid">
+    <div class="layui-row layui-col-space15">
+        <div class="layui-card">
+            <div class="layui-btn-group">
+                <button class="layui-btn layui-btn-warm layui-btn-sm" id="btn-expand">展开</button>
+                <button class="layui-btn layui-btn-warm layui-btn-sm" id="btn-fold">折叠</button>
+                <button class="layui-btn layui-btn-sm" id="btn-add">新增</button>
+            </div>
+            <table id="tree-table" class="layui-table" lay-filter="tree-table"></table>
+        </div>
+    </div>
+</div>
+<!-- 操作列 -->
+<script type="text/html" id="operate-state">
+    <a class="layui-btn layui-btn-primary layui-btn-xs" lay-event="edit">修改</a>
+    <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+</script>
+<script type="text/javascript" src="/static/layuiadmin/layui/layui.js"></script><script type="text/javascript" src="/static/js/tools.js"></script>
+<script>
+    var renderTable;
+    //
+    layui.config({
+        base: '/static/layuiadmin/modules/'
+    }).extend({
+        treetable: 'treetable-lay/treetable'
+    }).use(['table', 'treetable', 'form'], function () {
+        var $ = layui.jquery;
+        var table = layui.table;
+        var treetable = layui.treetable;
+        var form = layui.form,
+        // 渲染表格
+        renderTable = function () {
+            layer.load(2);
+            treetable.render({
+                treeColIndex: 1,
+                treeSpid: -1,
+                treeIdName: 'id',
+                treePidName: 'pid',
+                elem: '#tree-table',
+                url: '<?php echo url("admin/adminauth/index"); ?>',
+                page: false,
+                cols: [[
+                    {type: 'numbers'},
+                    {field: 'name', minWidth: 120, title: '菜单名称'},
+                    {field: 'url', minWidth: 200, title: '菜单链接'},
+                    {field: 'auth_menu_status', width: 100,  title: '菜单状态', align: 'center', templet: function (d) {
+                        // 显示的名称
+                        var _show = "";
+
+                        if("1" == d.auth_menu_status){
+                            _show = "checked";
+                        }
+                        //返回值
+                        return '<input type="checkbox" name="menustatus" value="' + d.id + '" lay-skin="switch" lay-filter="menustatus" lay-text="显示|隐藏" ' + _show + '>';
+                    }},
+                    {field: 'status', width: 100,  title: '是否验证', align: 'center', templet: function (d) {
+                        // 显示的名称
+                        var _show = "";
+
+                        if("1" == d.status){
+                            _show = "checked";
+                        }
+                        //返回值
+                        return '<input type="checkbox" name="authstatus" value="' + d.id + '" lay-skin="switch" lay-filter="authstatus" lay-text="是|否" ' + _show + '>';
+                    }
+                    },
+                    {field: 'orderIndex', width: 80, align: 'center', title: '排序', templet: function (d) {
+                        return '<input name="authSort" data-aid="' + d.id +'" class="layui-input fuk-list-sort" value="' + d.orderIndex + '" size="10"/>';
+                    }},
+                    {templet: '#operate-state', width: 150, align: 'center', title: '操作', fixed: 'right'},
+                ]],
+                done: function () {
+                    layer.closeAll('loading');
+                }
+            });
+        };
+        // 渲染表格
+        renderTable();
+        $('#btn-expand').click(function () {
+            treetable.expandAll('#tree-table');
+        });
+        $('#btn-fold').click(function () {
+            treetable.foldAll('#tree-table');
+        });
+        $('#btn-add').click(function () {
+            layer.open({
+                type: 2,
+                title: '新增菜单',
+                content: '<?php echo url("admin/adminauth/addupdate"); ?>',
+                area: layerArea(), //计算页面大小
+            });
+        });
+        // 注册事件
+        table.on('tool(tree-table)', function(obj){
+            var data = obj.data; //获得当前行数据
+            var layEvent = obj.event;
+            // 根据data和不同的事件处理
+            if (layEvent == "del") {
+                // 删除操作
+                layer.confirm('你确定要删除此菜单?', {icon: 3, title:'提示'}, function(index){
+                    // 执行删除操作
+                    $.post("<?php echo url('admin/adminauth/status'); ?>",{aid:data.id, status: -1}, function(result){
+                        layer.close(index);
+                        if (result.code ==  0) {
+                            renderTable();
+                            layer.msg("操作成功",{icon: 1});
+                        } else {
+                            layer.msg(result.msg,{icon: 2});
+                        }
+                    },"json");
+                });
+            } else if (layEvent == "forbid") {
+                // 禁用
+                layer.confirm('你确定要禁用该菜单?', {icon: 3, title:'提示'}, function(index){
+                    $.post("<?php echo url('admin/adminauth/status'); ?>",{aid:data.id, status: 0}, function(result){
+                        layer.close(index);
+                        if (result.code ==  0) {
+                            renderTable();
+                            layer.msg("操作成功",{icon: 1});
+                        } else {
+                            layer.msg(result.msg,{icon: 2});
+                        }
+                    },"json");
+                });
+
+            } else if (layEvent == "reuse") {
+                // 启用
+                layer.confirm('你确定要启用该菜单?', {icon: 3, title:'提示'}, function(index){
+                    $.post("<?php echo url('admin/adminauth/status'); ?>",{aid:data.id, status: 1}, function(result){
+                        layer.close(index);
+                        if (result.code ==  0) {
+                            renderTable();
+                            layer.msg("操作成功",{icon: 1});
+                        } else {
+                            layer.msg(result.msg,{icon: 2});
+                        }
+                    },"json");
+                });
+            } else if (layEvent == "edit") {
+                layer.open({
+                    type: 2,
+                    title: '修改菜单',
+                    content: '<?php echo url("admin/adminauth/addupdate"); ?>?aid=' + data.id,
+                    area: layerArea(), //计算页面大小
+                });
+            }
+        });
+
+        $('body').on('change','.fuk-list-sort',function() {
+            var id = $(this).data('aid');
+            var sort = $(this).val();
+            $.post('/admin/adminauth/sort.html',{aid:id, sort:sort},function(result){
+                if(result.code == 0){
+                    renderTable();
+                    layer.msg("操作成功",{icon: 1});
+                }else{
+                    layer.msg(result.msg,{icon: 2});
+                }
+            })
+        });
+
+        form.on('switch(menustatus)', function(obj){
+            loading =layer.load(1, {shade: [0.1,'#fff']});
+            var id = this.value;
+            var menustatus = obj.elem.checked===true ? 1 : 0;
+            $.post('/admin/adminauth/status',{'aid':id,'status':menustatus, 'type': 'menu'},function (result) {
+                layer.close(loading);
+                if(result.code == 0){
+                    renderTable();
+                    layer.msg("操作成功",{icon: 1});
+                }else{
+                    layer.msg(result.msg,{icon: 2});
+                    return false;
+                }
+            })
+        });
+
+        form.on('switch(authstatus)', function(obj){
+            loading =layer.load(1, {shade: [0.1,'#fff']});
+            var id = this.value;
+            var authstatus = obj.elem.checked===true ? 1 : 0;
+            $.post('<?php echo url("admin/adminauth/status"); ?>',{'aid':id, 'status': authstatus, 'type': 'auth'},function (result) {
+                layer.close(loading);
+                if(result.code == 0){
+                    renderTable();
+                    layer.msg("操作成功",{icon: 1});
+                }else{
+                    layer.msg(result.msg,{icon: 2});
+                    return false;
+                }
+            })
+        });
+    });
+</script>
+</body>
+</html>
